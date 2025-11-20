@@ -1,0 +1,93 @@
+export interface Collaborator {
+  img: string;
+  nombre: string;
+  info: string;
+  X: string;
+}
+
+export const colaboradores: Collaborator[] = [
+  {
+    img: "/Recursos/Colaboradores/2bets-NBA.jpg",
+    nombre: "2bets",
+    info: "NBA",
+    X: "https://x.com/2bets?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/Alcatraz_Bets-NBA-y-NFL.jpg",
+    nombre: "Alcatraz_Bets",
+    info: "NBA y NFL",
+    X: "https://x.com/alcatraz_bets?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/ApuestasIvan-Tenis.jpg",
+    nombre: "ApuestasIvan",
+    info: "Tenis",
+    X: "https://x.com/ApuestasIvan?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/ElMaillotVerde-Futbol.jpg",
+    nombre: "ElMaillotVerde",
+    info: "Fútbol",
+    X: "https://x.com/ElMaillotVerde?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/Espicksbet-Futbol.jpg",
+    nombre: "Espicksbet",
+    info: "Fútbol",
+    X: "https://x.com/Espicksbet?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/FooFighterR6S-NFL.jpg",
+    nombre: "FooFighterR6S",
+    info: "NFL",
+    X: "https://x.com/FooFighterR6S?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/GbeyApuestas-Tenis.jpg",
+    nombre: "GbeyApuestas",
+    info: "Tenis",
+    X: "https://x.com/GbeyApuestas?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/GOLzalo1984bets-Tenis.jpg",
+    nombre: "GOLzalo1984bets",
+    info: "Tenis",
+    X: "https://x.com/GOLzalo1984bets?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/Kerbstipster-Motor.jpg",
+    nombre: "Kerbstipster",
+    info: "Motor",
+    X: "https://x.com/Kerbstipster?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/Leivinha7-Futbol.jpg",
+    nombre: "Leivinha7",
+    info: "Fútbol",
+    X: "https://x.com/Leivinha7?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/MMAanalytics-MMA.jpg",
+    nombre: "MMAanalytics",
+    info: "MMA",
+    X: "https://x.com/MMAanalytics?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/pasesconsuerte-Futbol.jpg",
+    nombre: "pasesconsuerte",
+    info: "Fútbol",
+    X: "https://x.com/pasesconsuerte?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/Swatspain-Futbol.jpg",
+    nombre: "Swatspain",
+    info: "Fútbol",
+    X: "https://x.com/Swatspain?lang=es"
+  },
+  {
+    img: "/Recursos/Colaboradores/ToyenUFC-MMA.jpg",
+    nombre: "ToyenUFC",
+    info: "MMA",
+    X: "https://x.com/ToyenUFC?lang=es"
+  }
+];
