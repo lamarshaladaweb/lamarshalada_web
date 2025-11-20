@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden -mt-[73px] pt-[73px]">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden -mt-16 pt-16">
       {/* Video Background */}
       <video
         autoPlay

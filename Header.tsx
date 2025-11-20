@@ -9,16 +9,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative w-full z-50 h-16 overflow-visible bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-fit">
-        <div className="flex justify-between items-center">
+    <header className="backdrop-blur-sm sticky top-0 z-50 border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
-          <div className="flex items-end space-x-3">
-            <img
-              src="/Recursos/Logos_Banners/LAMARSHALADA_LOGO2.png"
-              alt="Logo de La Marshalada"
-              className="h-32 md:h-36 object-contain translate-y-2 md:translate-y-3"
-              style={{ willChange: 'transform' }}
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/Recursos/Logos_Banners/LAMARSHALADA_LOGO2.png" 
+              alt="Logo de La Marshalada" 
+              className="h-24 object-contain"
             />
             <div>
               <h1 className="text-xl font-bold text-white">La Marshalada</h1>
@@ -50,7 +49,7 @@ export default function Header() {
 
         {/* Mobile Social Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 border-t border-white/10">
             <div className="flex justify-center space-x-5 pt-4">
               {socialLinksData.map((link) => (
                 <SocialIcon 
