@@ -1,6 +1,54 @@
 "use client";
+ 
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const [loading, setLoading] = useState(true);
+  const [lastStreamText, setLastStreamText] = useState("Último directo: información no disponible");
+  const [nextStreamText, setNextStreamText] = useState("Próximo directo: información no disponible");
+
+  useEffect(() => {
+    const formatDateTime = (iso: string) =>
+      new Date(iso).toLocaleString("es-ES", {
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+    const fetchData = async () => {
+      try {
+        const [lastRes, nextRes] = await Promise.all([
+          fetch("https://api.lamarshalada.com/api/twitch-last-stream"),
+          fetch("https://api.lamarshalada.com/api/twitch-next-stream"),
+        ]);
+
+        const lastData = await lastRes.json();
+        const nextData = await nextRes.json();
+
+        if (lastData && lastData.found && lastData.createdAt) {
+          setLastStreamText(`Último directo: ${formatDateTime(lastData.createdAt)}`);
+        } else {
+          setLastStreamText("Último directo: sin VOD disponible");
+        }
+
+        if (nextData && nextData.found && nextData.startTime) {
+          setNextStreamText(`Próximo directo: ${formatDateTime(nextData.startTime)}`);
+        } else {
+          setNextStreamText("Próximo directo: sin horario programado");
+        }
+      } catch (error) {
+        console.error("Error fetching Twitch info for Hero:", error);
+        setLastStreamText("Último directo: información no disponible");
+        setNextStreamText("Próximo directo: información no disponible");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
@@ -43,7 +91,14 @@ export default function Hero() {
 
           {/* Last Broadcast Info */}
           <div className="text-base sm:text-lg font-light">
-            Último Directo: Hace 5 horas
+            {loading ? (
+              <>Cargando información de los directos...</>
+            ) : (
+              <>
+                <div>{lastStreamText}</div>
+                <div>{nextStreamText}</div>
+              </>
+            )}
           </div>
         </div>
       </div>
