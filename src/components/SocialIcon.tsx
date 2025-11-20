@@ -14,7 +14,7 @@ export function SocialIcon({ icon, label, url, className = "" }: SocialIconProps
       target="_blank"
       rel="noopener noreferrer"
       title={label}
-      className={`text-gray-600 hover:text-red-600 transition-colors duration-200 transform hover:scale-110 ${className}`}
+      className={`text-gray-200 hover:text-red-600 transition-colors duration-200 transform hover:scale-110 ${className}`}
     >
       <i className={`fab fa-${icon} text-xl`}></i>
     </a>

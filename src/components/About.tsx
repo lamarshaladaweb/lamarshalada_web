@@ -1,6 +1,7 @@
 "use client";
 
 import { colaboradores } from "@/data/colaboradores";
+import RichText from "./RichText";
 
 export default function About() {
   return (
@@ -36,9 +37,22 @@ export default function About() {
                 </div>
 
                 <div className="flex-1 space-y-4">
-                  <h4 className="text-2xl font-bold" style={{ color: "#e6f7e6" }}>
-                    ¿Quién es Marshall?
-                  </h4>
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-2xl font-bold" style={{ color: "#e6f7e6" }}>
+                      ¿Quién es Marshall?
+                    </h4>
+                    <span
+                      className="text-xs font-medium px-3 py-1 rounded-full"
+                      style={{
+                        background: "linear-gradient(90deg,#7fff00,#6fdf00)",
+                        color: "#032a00",
+                        boxShadow: "0 6px 18px rgba(127,255,0,0.12)",
+                      }}
+                    >
+                      Fundador
+                    </span>
+                  </div>
+
                   <div className="mt-2 mb-4 flex justify-start">
                     <div
                       style={{
@@ -50,17 +64,27 @@ export default function About() {
                       }}
                     />
                   </div>
-                  <p className="text-lg leading-relaxed" style={{ color: "#d1e9d1" }}>
-                    Marshall es un humano, hasta que no se demuestre lo contrario, padre de 3 mosqueteros/as, ilerdense, apasionado de las inversiones, veo mucho deporte, pero no practico ninguno.
-                  </p>
 
-                  <p className="text-lg leading-relaxed" style={{ color: "#d1e9d1" }}>
-                    Hace más de 15 años empecé a juguetear con las apuestas deportivas, con el tiempo fui incrementando dicha actividad hasta que varias casas de apuestas me dijeron que no era bienvenido. Una vez expulsado de las más grandes tenía varias opciones; querellarme, emigrar o tomármelo todo más lúdico y gambler.
-                  </p>
+                  <RichText
+                    content={`<p><strong>Marshall</strong> es un humano, hasta que no se demuestre lo contrario, padre de <strong>3 mosqueteros/as</strong>, <em>ilerdense</em> y apasionado de las <strong>inversiones</strong>. Veo mucho deporte, pero no practico ninguno.</p>
+                    <p><strong>Hace más de 15 años</strong> empecé a juguetear con las apuestas deportivas; con el tiempo aumenté la actividad hasta que varias casas de apuestas me dijeron que no era bienvenido. Tras ser expulsado opté por <em>tomarlo con humor</em> y convertirlo en entretenimiento.</p>
+                    <p style="color:#b8dcb8;"><strong>Nota:</strong> Si vives en España no es posible vivir de las apuestas. Apuesto por <em>recreación</em> y por el espíritu <strong>gambler</strong>.</p>`}
+                    className="text-lg leading-relaxed"
+                  />
 
-                  <p className="text-base" style={{ color: "#b8dcb8" }}>
-                    Si vives en España no es posible vivir de las apuestas, que no te digan lo contrario. A veces nos ponemos serios pero apuesto por recreación y por gamblerismo.
-                  </p>
+                  <div className="pt-2">
+                    <button
+                      onClick={() => window.open('/Trabajo/Colaboradores.js', '_blank')}
+                      className="inline-block px-4 py-2 rounded-lg font-semibold"
+                      style={{
+                        background: "linear-gradient(90deg,#7FFF00,#4CAF50)",
+                        color: "#022200",
+                        boxShadow: "0 8px 28px rgba(127,255,0,0.12)",
+                      }}
+                    >
+                      Ver más
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,9 +97,22 @@ export default function About() {
                 boxShadow: "0 0 30px rgba(0,191,255,0.16), 0 0 60px rgba(0,191,255,0.06)",
               }}
             >
-              <h4 className="text-2xl font-bold mb-3 text-center md:text-left" style={{ color: "#dff7ff" }}>
-                ¿Qué es la Marshalada?
-              </h4>
+              <div className="flex items-center justify-between">
+                <h4 className="text-2xl font-bold mb-3 text-center md:text-left" style={{ color: "#dff7ff" }}>
+                  ¿Qué es la Marshalada?
+                </h4>
+                <span
+                  className="text-xs font-medium px-3 py-1 rounded-full"
+                  style={{
+                    background: "linear-gradient(90deg,#00BFFF,#1E90FF)",
+                    color: "#001827",
+                    boxShadow: "0 6px 18px rgba(0,191,255,0.12)",
+                  }}
+                >
+                  Comunidad
+                </span>
+              </div>
+
               <div className="mb-4 flex justify-center md:justify-start">
                 <div
                   style={{
@@ -89,17 +126,17 @@ export default function About() {
               </div>
 
               <div className="space-y-3">
-                <p className="text-lg leading-relaxed" style={{ color: "#d1e9d1" }}>
-                  Marshall es La Marshalada, pero la Marshalada no es Marshall, o no solo.
-                </p>
-
-                <p className="text-lg leading-relaxed" style={{ color: "#d1e9d1" }}>
-                  La Marshalada es un canal abierto para que todos los que nos puedan aportar cosas positivas se pasen a charlar con nosotros. Todos nos hacen crecer; des de los primeros que se pasaron, nuestros colaboradores más habituales y los que se han pasado solo vez para una charlita.
-                </p>
-
-                <p className="text-lg leading-relaxed" style={{ color: "#d1e9d1" }}>
-                  La idea base es tratar todos los temas siempre de forma distendida, ya sean inversiones, apuestas... Y que el gran chat siempre aporte, sin él no podemos hacerlo.
-                </p>
+                <RichText
+                  content={`<p><strong>Marshall</strong> es La Marshalada, pero la Marshalada no es Marshall (o no solo). <em>Es un proyecto colectivo</em> y un espacio para quienes aportan ideas, conocimientos y buen rollo.</p>
+                  <p>La Marshalada recibe desde colaboradores habituales hasta invitados puntuales; todos contribuyen y nos ayudan a crecer.</p>
+                  <p>Tratamos temas de forma distendida —<strong>inversiones</strong>, <strong>apuestas</strong> y más— siempre con el objetivo de que la <em>comunidad aporte valor</em>.</p>
+                  <ul style="margin-top:8px; color:#d1e9d1;">
+                    <li><strong>Charlas</strong> con expertos y amigos</li>
+                    <li><strong>Colaboraciones</strong> variadas</li>
+                    <li><em>Contenido</em> pensado para aprender y entretener</li>
+                  </ul>`}
+                  className="text-lg leading-relaxed"
+                />
               </div>
             </div>
           </div>
