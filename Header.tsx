@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { SocialIcon, socialLinksData } from "./SocialIcon";
+import { SocialIcon, socialLinksData } from "./src/components/SocialIcon";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="backdrop-blur-sm sticky top-0 z-50 border-b border-white/10">
+    <header className="relative w-full z-50 h-16 overflow-visible bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}

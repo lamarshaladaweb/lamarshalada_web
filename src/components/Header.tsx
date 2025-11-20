@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative w-full z-50 h-16 overflow-visible bg-transparent">
+    <header className="relative w-full z-50 h-0 overflow-visible bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-fit">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
