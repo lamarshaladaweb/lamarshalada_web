@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:slug",
+        destination: "https://api.lamarshalada.com/:slug",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
