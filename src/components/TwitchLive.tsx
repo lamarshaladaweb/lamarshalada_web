@@ -242,7 +242,7 @@ export default function TwitchLive() {
                 </div>
               ) : isLive ? (
                 <iframe
-                  src="https://player.twitch.tv/?channel=marshalada&parent=lamarshalada.com"
+                  src="https://player.twitch.tv/?channel=marshalada&parent=www.lamarshalada.com&parent=localhost"
                   frameBorder="0"
                   allowFullScreen
                   className="w-full aspect-video rounded-lg"
