@@ -84,9 +84,14 @@ export default function Hero() {
 
           {/* CTA Button */}
           <div>
-            <button className="bg-[#7FFF00] hover:bg-[#6FDF00] text-black font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300">
+            <a
+              href="https://www.twitch.tv/marshalada"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#7FFF00] hover:bg-[#6FDF00] text-black font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 inline-block"
+            >
               VER CANAL AHORA
-            </button>
+            </a>
           </div>
 
           {/* Last Broadcast Info */}

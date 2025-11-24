@@ -74,7 +74,7 @@ export default function About() {
 
                   <div className="pt-2">
                     <button
-                      onClick={() => window.open('/Trabajo/Colaboradores.js', '_blank')}
+                      onClick={() => window.open('https://www.instagram.com/lamarshalada', '_blank')}
                       className="inline-block px-4 py-2 rounded-lg font-semibold"
                       style={{
                         background: "linear-gradient(90deg,#7FFF00,#4CAF50)",
@@ -137,6 +137,19 @@ export default function About() {
                   </ul>`}
                   className="text-lg leading-relaxed"
                 />
+                <div className="pt-2">
+                  <button
+                    onClick={() => window.open('https://discord.com/invite/CczFhBxedq', '_blank')}
+                    className="inline-block px-4 py-2 rounded-lg font-semibold"
+                    style={{
+                      background: "linear-gradient(90deg,#00BFFF,#1E90FF)",
+                      color: "#001827",
+                      boxShadow: "0 8px 28px rgba(0,191,255,0.18)",
+                    }}
+                  >
+                    Únete
+                  </button>
+                </div>
               </div>
             </div>
           </div>
