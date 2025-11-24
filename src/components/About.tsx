@@ -67,9 +67,8 @@ export default function About() {
 
                   <RichText
                     content={`<p><strong>Marshall</strong> es un humano, hasta que no se demuestre lo contrario, padre de <strong>3 mosqueteros/as</strong>, <em>ilerdense</em> y apasionado de las <strong>inversiones</strong>. Veo mucho deporte, pero no practico ninguno.</p>
-                    <p><strong>Hace más de 15 años</strong> empecé a juguetear con las apuestas deportivas; con el tiempo aumenté la actividad hasta que varias casas de apuestas me dijeron que no era bienvenido. Tras ser expulsado opté por <em>tomarlo con humor</em> y convertirlo en entretenimiento.</p>
-                    <p style="color:#b8dcb8;"><strong>Nota:</strong> Si vives en España no es posible vivir de las apuestas. Apuesto por <em>recreación</em> y por el espíritu <strong>gambler</strong>.</p>`}
-                    className="text-lg leading-relaxed"
+                    <p><strong>Hace más de 15 años</strong> empecé a juguetear con las apuestas deportivas; Con el tiempo fui aumentando la actividad y aprendiendo mucho por el camino, hasta que entendí algo clave:</p>
+                    <p style="color:#b8dcb8;"> Si vives en España no es posible vivir de las apuestas. Desde entonces lo afronto con <em>humor</em>, responsabilidad y espíritu <strong>gambler</strong>, convirtiéndolo en una forma de entretenimiento que comparto con la comunidad. </p>`}
                   />
 
                   <div className="pt-2">
@@ -127,14 +126,19 @@ export default function About() {
 
               <div className="space-y-3">
                 <RichText
-                  content={`<p><strong>Marshall</strong> es La Marshalada, pero la Marshalada no es Marshall (o no solo). <em>Es un proyecto colectivo</em> y un espacio para quienes aportan ideas, conocimientos y buen rollo.</p>
-                  <p>La Marshalada recibe desde colaboradores habituales hasta invitados puntuales; todos contribuyen y nos ayudan a crecer.</p>
-                  <p>Tratamos temas de forma distendida —<strong>inversiones</strong>, <strong>apuestas</strong> y más— siempre con el objetivo de que la <em>comunidad aporte valor</em>.</p>
+                  content={`<p>La Marshalada es una familia rara, pero familia al fin y al cabo.</p>
+                  <p>Marshall es parte del invento, pero La Marshalada va mucho más allá: es un espacio colectivo donde cada uno suma —ideas, risas, conocimiento, locuras y buen rollo— y donde todo el mundo tiene voz.</p>
+                  <p>Aquí se mezclan colaboradores habituales, invitados inesperados y la comunidad, que es la que realmente da forma al proyecto. Cada directo, charla o contenido nace de esa mezcla: deporte, inversiones, apuestas (con cabeza), salseo deportivo y lo que haga falta.</p>
+                  <p>La idea es simple: aprender, disfrutar y aportar valor, siempre desde un tono cercano y sin tomarnos demasiado en serio.</p>
+                  <p>Porque si algo define a La Marshalada es esto:</p>
                   <ul style="margin-top:8px; color:#d1e9d1;">
-                    <li><strong>Charlas</strong> con expertos y amigos</li>
-                    <li><strong>Colaboraciones</strong> variadas</li>
-                    <li><em>Contenido</em> pensado para aprender y entretener</li>
-                  </ul>`}
+                    <li><strong>Charlas</strong> con expertos y colegas</li>
+                    <li><strong>Colaboraciones</strong> que no verás en otro sitio</li>
+                    <li><strong>Contenido</strong> para entender, cuestionar y entretener</li>
+                    <li>Una <strong>comunidad</strong> que hace que todo sea más divertido</li>
+                  </ul>
+                  <p>Esto no va de Marshall. Va de todos.</p>
+                  <p>Por eso La Marshalada no se mira, se vive desde dentro.</p>`}
                   className="text-lg leading-relaxed"
                 />
                 <div className="pt-2">
