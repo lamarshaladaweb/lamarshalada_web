@@ -44,7 +44,7 @@ export const bettingSites: BettingSite[] = [
   { url: "https://api.lamarshalada.com/paf", img: "/Recursos/CasasApuestas/Paf-Logo.png", alt: "Paf", paises: ["es"] },
   { url: "https://api.lamarshalada.com/pokerstars", img: "/Recursos/CasasApuestas/PS-Logo-red.jpg", alt: "PokerStars", paises: ["es", "fr"] },
   { url: "https://api.lamarshalada.com/speedybet", img: "/Recursos/CasasApuestas/SpeedyBet_logo.png", alt: "SpeedyBet", paises: ["es"] },
-  { url: "https://api.lamarshalada.com/sportium", img: "/Recursos/CasasApuestas/Sportium.png", alt: "Sportium", paises: ["es","co","py"] },
+  { url: "https://api.lamarshalada.com/sportium", img: "/Recursos/CasasApuestas/sportium.png", alt: "Sportium", paises: ["es","co","py"] },
   { url: "https://api.lamarshalada.com/sportiumbet", img: "/Recursos/CasasApuestas/sportium.png", alt: "Sportiumbet", paises: ["mx"] },
   { url: "https://api.lamarshalada.com/stake", img: "/Recursos/CasasApuestas/stake-logo.jpg", alt: "Stake", paises: ["pe","co"] },
   { url: "https://api.lamarshalada.com/superbet", img: "/Recursos/CasasApuestas/superbet-logo.png", alt: "Superbet", paises: ["br"] },
