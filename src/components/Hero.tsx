@@ -79,7 +79,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl font-light">
-            Convierte en el ganador con la marshalada,los locos que lo cambiaron todo.
+            Convierte en el ganador con la marshalada, los locos que lo cambiaron todo.
           </p>
 
           {/* CTA Button */}
