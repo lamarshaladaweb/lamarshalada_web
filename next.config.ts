@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/:slug",
-        destination: "https://api.lamarshalada.com/:slug",
+        source: "/go/:slug",
+        destination: "https://api.lamarshalada.com/go/:slug",
         permanent: false,
       },
     ];
