@@ -26,7 +26,7 @@ export const bettingSites: BettingSite[] = [
   { url: "https://api.lamarshalada.com/codere", img: "/Recursos/CasasApuestas/codere-nuevo-logo.jpg", alt: "Codere", paises: ["es","ar","mx"] },
   { url: "https://api.lamarshalada.com/coolbet", img: "/Recursos/CasasApuestas/coolbet-logo.png", alt: "Coolbet", paises: ["pe","cl"] },
   { url: "https://api.lamarshalada.com/daznbet", img: "/Recursos/CasasApuestas/daznbet-logo.png", alt: "Daznbet", paises: ["ec","cl","es"] },
-  // { url: "https://api.lamarshalada.com/esportivabet", img: "/Recursos/CasasApuestas/esportivabet-logo.jpg", alt: "EsportivaBet", paises: ["br"] },
+  { url: "https://api.lamarshalada.com/esportivabet", img: "/Recursos/CasasApuestas/esportivabet-logo.jpg", alt: "EsportivaBet", paises: ["br"] },
   { url: "https://api.lamarshalada.com/segurobet", img: "/Recursos/CasasApuestas/segurobet-logo.png", alt: "Segurobet", paises: ["br"] },
   { url: "https://api.lamarshalada.com/goldenbull", img: "/Recursos/CasasApuestas/goldenbull-horizontal-logo.png", alt: "GoldenBull", paises: ["es"] },
   { url: "https://api.lamarshalada.com/goldenpark", img: "/Recursos/CasasApuestas/GoldenPark-logo.png", alt: "GoldenPark", paises: ["es"] },
@@ -57,6 +57,7 @@ export const bettingSites: BettingSite[] = [
   // { url: "https://api.lamarshalada.com/winner", img: "/Recursos/CasasApuestas/winner-logo.webp", alt: "Winner", paises: ["mx"] },
   { url: "https://api.lamarshalada.com/winpot", img: "/Recursos/CasasApuestas/winpot-logo.png", alt: "Winpot", paises: ["mx"] },
   { url: "https://api.lamarshalada.com/wplay", img: "/Recursos/CasasApuestas/wplay-logo.png", alt: "Wplay", paises: ["co"] },
+  { url: "https://api.lamarshalada.com/xbet", img: "/Recursos/CasasApuestas/xbet-logo.png", alt: "XBet", paises: ["us"] },
   { url: "https://api.lamarshalada.com/yosports", img: "/Recursos/CasasApuestas/yosports-opinion.png", alt: "YoSports", paises: ["es"] }
 ];
 
