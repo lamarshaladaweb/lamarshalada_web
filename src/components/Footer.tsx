@@ -43,7 +43,7 @@ export default function Footer() {
             <map name="bannerMap">
               <area
                 shape="rect"
-                coords="0,0,33,100%"
+                coords="0,5,175,40%"
                 href="https://datos.gob.es/es/aplicaciones/jugar-bien"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function Footer() {
               />
               <area
                 shape="rect"
-                coords="33,0,66,100%"
+                coords="485,15,566,30%"
                 href="https://www.ordenacionjuego.es/participantes-juego/juego-seguro"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function Footer() {
               />
               <area
                 shape="rect"
-                coords="66,0,100,100%"
+                coords="576,15,691,30%"
                 href="https://www.ordenacionjuego.es/participantes-juego/juego-seguro/rgiaj"
                 target="_blank"
                 rel="noopener noreferrer"
